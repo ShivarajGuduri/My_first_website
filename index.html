@@ -9,42 +9,49 @@
     <main>
       <nav>
         <ul>
-          <li><a href="Hone">Home</a></li>
-          <li><a href="About">About</a></li>
-          <li><a href="Contact">Contact</a></li>
+          <li><a href="#About Dogs">About Dogs</a></li>
+          <li><a href="#Origin of breeds">Origin of breeds</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
       <hr />
       <h1>About Dogs</h1>
       <img src="dog 1.avif" alt="dog image" height="250px" />
-      <br />
-      <a href="https://www.google.com/">Google</a>
-      <a href="https://www.youtube.com/">Youtube</a>
       <p>
         dog, (Canis lupus familiaris), domestic mammal of the family Canidae
         (order Carnivora). It is a subspecies of the gray wolf (Canis lupus) and
         is related to foxes and jackals. The dog is one of the two most
         ubiquitous and most popular domestic animals in the world (the cat is
-        the other). For more than 12,000 years it has lived with humans as a
-        hunting companion, protector, object of scorn or adoration, and friend.
-        The dog evolved from the gray wolf into more than 400 distinct breeds.
-        Human beings have played a major role in creating dogs that fulfill
-        distinct societal needs. Through the most rudimentary form of genetic
-        engineering, dogs were bred to accentuate instincts that were evident
-        from their earliest encounters with humans. Although details about the
-        evolution of dogs are uncertain, the first dogs were hunters with keen
-        senses of sight and smell. Humans developed these instincts and created
-        new breeds as need or desire arose.
+        the other). For more than <b>12,000</b> years it has lived with humans
+        as a hunting companion, protector, object of scorn or adoration, and
+        friend. The dog evolved from the gray wolf into more than
+        <b>400</b> distinct breeds. Human beings have played a major role in
+        creating dogs that fulfill distinct societal needs. Through the most
+        rudimentary form of genetic engineering, dogs were bred to accentuate
+        instincts that were evident from their earliest encounters with humans.
+        <i
+          >Although details about the evolution of dogs are uncertain, the first
+          dogs were hunters with keen senses of sight and smell. Humans
+          developed these instincts and created new breeds as need or desire
+          arose.</i
+        >
+      </p>
+      <h3>Links !!</h3>
+      <p>
+        <a href="https://www.google.com/">Google</a>
+      </p>
+      <p>
+        <a href="https://www.youtube.com/">Youtube</a>
       </p>
       <h1>Origin of breeds</h1>
       <img src="dog 2.avif" alt="Dog image" height="250px" />
       <p>
         Once it became evident that dogs were faster and stronger and could see
         and hear better than humans, those specimens exhibiting these qualities
-        were interbred to enhance such attributes. Fleet-footed sight hounds
-        were revered by noblemen in the Middle East, while in Europe powerful
-        dogs such as the mastiff were developed to protect home and traveler
-        from harm. As society changed and agriculture—in addition to
+        were interbred to enhance such attributes. <u>Fleet-footed</u> sight
+        hounds were revered by noblemen in the Middle East, while in Europe
+        powerful dogs such as the mastiff were developed to protect home and
+        traveler from harm. As society changed and agriculture—in addition to
         hunting—became a means of sustaining life, other breeds of dogs were
         developed. Herding and guarding dogs were important to farmers for
         protecting their flocks. At the same time, small breeds became desirable
@@ -54,7 +61,7 @@
         barns of rodents. Pointing and retrieving breeds were selected for
         special tasks related to aiding the hunter to find and capture game.
         Many breeds are extremely ancient, while others have been developed as
-        recently as the 1800s.
+        recently as the <b>1800s</b>.
       </p>
       <h1>Physical traits and functions</h1>
       <h2>General characteristics</h2>
@@ -106,39 +113,105 @@
       </table>
       <br />
       <h2>Want to adopt a Dog?? Fill the details below!!</h2>
-      <form action="\dogs">
+      <form action="/dogs">
         <p>
           <label for="Name">Enter your Name:</label>
-          <input type="text" id="Name" placeholder="Name" />
+          <input
+            type="text"
+            id="Name"
+            placeholder="Name"
+            name="Name"
+            required
+            minlength="5"
+            maxlength="20"
+          />
         </p>
         <p>
-          <label for="Breed name">Enter your favorite Dog breed Name:</label>
-          <input type="text" id="Breed name" placeholder="Breed Name" />
+          <label for="email">Enter your Email ID:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="example@gmail.com"
+            name="email"
+            required
+            minlength="5"
+            maxlength="30"
+          />
         </p>
         <p>
           <label for="Number"
             >How many months old puppy you are looking for:</label
           >
-          <input type="Number" id="Number" placeholder="Number" />
+          <input
+            type="Number"
+            id="Number"
+            placeholder="Number"
+            name="Num"
+            required
+          />
         </p>
         <p>
           <label for="color"
             >Which color shade puppy you are lokking for:</label
           >
-          <input type="color" id="color" />
+          <input type="color" id="color" name="color" />
         </p>
         <p>
-          <button type="button">Submit</button>
+          Do you already have a Dog:
+          <label for="present">Yes</label>
+          <input type="radio" id="present" name="yes" />
+          <label for="Not">No</label>
+          <input type="radio" id="Not" name="yes" />
+        </p>
+        <p>
+          <label for="like">How much you like dogs :</label>
+          <input type="range" id="like" min="0" max="10" name="rating" />
+        </p>
+        <p>
+          <label for="select">Select the Dog breed you want to Adopt </label>
+          <select name="Dog_Breed" id="select">
+            <option value="">---Choose an option---</option>
+            <option value="Boxer">Boxer</option>
+            <option value="Golden">Golden retriver</option>
+            <option value="Bulldog">Bulldog</option>
+            <option value="Husky">Husky</option>
+            <option value="Chow">Chow chow</option>
+          </select>
+        </p>
+        <p>
+          <label for="describe">Describe something about Dogs:</label>
+          <br />
+          <textarea
+            name="describe"
+            id="describe"
+            cols="30"
+            rows="5"
+            placeholder="Type something here..."
+            required
+          ></textarea>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
         </p>
       </form>
+      <h2>Search Anything</h2>
+      <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" />
+        <button>Search youtube</button>
+      </form>
+      <br />
+      <form action="https://www.google.com/search">
+        <input type="text" name="q" />
+        <button>Search Google</button>
+      </form>
+      <br />
     </main>
-    <br />
     <hr />
     <footer>
       <p>This is my website</p>
       <ul>
-        <li><a href="Contact">Contact</a></li>
-        <li><a href="Help">Help</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Help">Help</a></li>
       </ul>
     </footer>
   </body>
