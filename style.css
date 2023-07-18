@@ -1,0 +1,190 @@
+body {
+    background-color: white;
+    margin: 0px;
+} 
+
+
+h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center-table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .center-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
+  button {
+    background-color: dodgerblue;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: dodgerblue;
+    color: white;
+  }
+
+  button:hover{
+    padding: 5px 20px;
+
+    border-radius: 10px;
+
+  }
+
+
+  nav {
+    background-color: rgb(211, 230, 237);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 70px;
+    padding-left: 25px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 30px;
+    font-size: larger;
+    font-weight: 500;
+  }
+  
+  .menu li a {
+    color: #003260;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+
+  .dashboard {
+    height: 700px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  .dashboard-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+
+  #login {
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 25px;
+    color: black;
+  }
+
+  #sign {
+    background-color: black;
+    padding: 5px 20px;
+    border-radius: 25px;
+    color: white;
+  }
+
+ .sad-image {
+    width: 400px;
+    padding-left: 150px;
+    padding-bottom: 20px;
+
+
+}
+
+.quote {
+    text-align: center;
+    font-family:sans-serif;
+    padding: 40px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: rgb(69, 66, 77);
+}
+
+.saddiscription {
+    width: fit-content;
+    padding-left: 190px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-right: 100px;
+   
+}
+
+.sad {
+    width: fit-content;
+    padding-top: 20px;
+
+
+}
+
+.container {
+    overflow: hidden; /* Clear the float */
+  }
+  
+  .saddiscription {
+    float: left;
+    width: 30%; /* Adjust the width as needed */
+    background-color: white;
+  }
+  
+  .sad {
+    float: right;
+    width: 50%; /* Adjust the width as needed */
+    background-color: white;
+  }
+
+  .saddiscription h4 {
+    font-size: x-large;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    
+  }
+
+  .saddiscription pre {
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 25px;
+  }
