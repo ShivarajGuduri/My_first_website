@@ -4,19 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Dog</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
       <nav>
-        <ul>
-          <li><a href="#About Dogs">About Dogs</a></li>
-          <li><a href="#Origin of breeds">Origin of breeds</a></li>
-          <li><a href="#Contact">Contact</a></li>
+        <div class="logo">
+          <img src="Adopt (1).png" alt="Logo" />
+        </div>
+        <ul class="menu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Find a Pet</a></li>
+          <li><a href="#">How it Works</a></li>
+          <li><a href="#" id="login">Login</a></li>
+          <li><a href="#" id="sign">Sign up</a></li>
         </ul>
       </nav>
-      <hr />
-      <h1>About Dogs</h1>
-      <img src="dog 1.avif" alt="dog image" height="250px" />
+      <div class="dashboard">
+        <img src="d.png" alt="Dashboard Image" class="dashboard-image" />
+      </div>
+      <h1 class="quote">Your Pet Adoption Journey With us !</h1>
+      <div class="container">
+        <div class="saddiscription">
+          <h4>&#128054 Select pet</h4>
+          <pre>
+Adopt a dog who's right for you. Simply enter your city
+above to start your search.
+        </pre
+          >
+          <h4>&#128062 Connect</h4>
+          <pre>
+Once you find a pet, click "show number" to get contacts
+info for their pet parent or rescue. Contact them to learn
+more about how to meet and adopt the pet.
+        </pre
+          >
+          <h4> &#10032 Adopt Love</h4>
+          <pre>
+The rescue or pet parents will walk you through their
+adoption process. Prepare your home for the arrival of
+your fur baby to help them adjust to their new family.
+        </pre
+          >
+          <h4>&#10022 Free Vet Consultation</h4>
+          <pre>
+<b>Adopt</b> will help your pet to settle down in its new home,
+once you complete the Adoption journey reach out to us 
+for free vet consultation.
+        </pre>
+        </div>
+        <div class="sad">
+          <img src="s.jpg" alt="dog-image" class="sad-image" />
+        </div>
+      </div>
+      <div class="center-image">
+        <img src="backremove.png" alt="dog image" height="250px" />
+      </div>
       <p>
         dog, (Canis lupus familiaris), domestic mammal of the family Canidae
         (order Carnivora). It is a subspecies of the gray wolf (Canis lupus) and
@@ -44,7 +87,9 @@
         <a href="https://www.youtube.com/">Youtube</a>
       </p>
       <h1>Origin of breeds</h1>
-      <img src="dog 2.avif" alt="Dog image" height="250px" />
+      <div class="center-image">
+        <img src="backremove2.png" alt="Dog image" height="250px" />
+      </div>
       <p>
         Once it became evident that dogs were faster and stronger and could see
         and hear better than humans, those specimens exhibiting these qualities
@@ -65,14 +110,16 @@
       </p>
       <h1>Physical traits and functions</h1>
       <h2>General characteristics</h2>
-      <ul>
-        <li>Teeth</li>
-        <li>Digestive system</li>
-        <li>Skeletal structure</li>
-        <li>Senses</li>
-      </ul>
+      <div class="center-list">
+        <ul>
+          <li>Teeth</li>
+          <li>Digestive system</li>
+          <li>Skeletal structure</li>
+          <li>Senses</li>
+        </ul>
+      </div>
       <h1>Table</h1>
-      <table>
+      <table class="center-table">
         <thead>
           <tr>
             <th rowspan="2">Breed</th>
@@ -111,6 +158,7 @@
           </tr>
         </tbody>
       </table>
+
       <br />
       <h2>Want to adopt a Dog?? Fill the details below!!</h2>
       <form action="/dogs">
@@ -140,7 +188,7 @@
         </p>
         <p>
           <label for="Number"
-            >How many months old puppy you are looking for:</label
+            >How many months old puppy are you looking for:</label
           >
           <input
             type="Number"
@@ -152,7 +200,7 @@
         </p>
         <p>
           <label for="color"
-            >Which color shade puppy you are lokking for:</label
+            >Which color shade puppy are you looking for:</label
           >
           <input type="color" id="color" name="color" />
         </p>
@@ -181,6 +229,7 @@
         <p>
           <label for="describe">Describe something about Dogs:</label>
           <br />
+          <br />
           <textarea
             name="describe"
             id="describe"
@@ -196,13 +245,16 @@
       </form>
       <h2>Search Anything</h2>
       <form action="https://www.youtube.com/results">
-        <input type="text" name="search_query" />
-        <button>Search youtube</button>
+        <p>
+          <input type="text" name="search_query" />
+          <button>youtube</button>
+        </p>
       </form>
-      <br />
       <form action="https://www.google.com/search">
-        <input type="text" name="q" />
-        <button>Search Google</button>
+        <p>
+          <input type="text" name="q" />
+          <button>Google</button>
+        </p>
       </form>
       <br />
     </main>
