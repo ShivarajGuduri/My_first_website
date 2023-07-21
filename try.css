@@ -39,6 +39,11 @@ body {
     margin-bottom: 100px;
 }
 
+.logos {
+    width: 30px;
+    padding-right: 10px;
+}
+
 #mainNavbar {
     font-size: 1.2rem;
     font-weight: 100;    
@@ -70,6 +75,34 @@ body {
 .navbar.scrolled {
     background: #282626;
     transition: background 500ms;
+}
+
+.underline {
+    color: #c7c7c7;
+    background-color: #c7c7c7;
+}
+
+.contact {
+     font-size: 1.2rem;
+     color: #EA1C2C;
+     padding: 10px;
+     padding-left: 0;
+}
+
+.foot h5 a{
+    font-size: small;
+    color: #a2a0a0;
+    line-height: 2.5;
+}
+
+.foot h5 a:hover {
+    color: #EA1C2C;
+    text-decoration: none;
+}
+
+
+.empty {
+    height: 50px;
 }
 
 @media (max-width: 1200px) {
